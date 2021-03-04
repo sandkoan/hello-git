@@ -1,0 +1,568 @@
+
+~
+❯ git
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone             Clone a repository into a new directory
+   init              Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add               Add file contents to the index
+   mv                Move or rename a file, a directory, or a symlink
+   restore           Restore working tree files
+   rm                Remove files from the working tree and from the index
+   sparse-checkout   Initialize and modify the sparse-checkout
+
+examine the history and state (see also: git help revisions)
+   bisect            Use binary search to find the commit that introduced a bug
+   diff              Show changes between commits, commit and working tree, etc
+   grep              Print lines matching a pattern
+   log               Show commit logs
+   show              Show various types of objects
+   status            Show the working tree status
+
+grow, mark and tweak your common history
+   branch            List, create, or delete branches
+   commit            Record changes to the repository
+   merge             Join two or more development histories together
+   rebase            Reapply commits on top of another base tip
+   reset             Reset current HEAD to the specified state
+   switch            Switch branches
+   tag               Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch             Download objects and refs from another repository
+   pull              Fetch from and integrate with another repository or a local branch
+   push              Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+
+~
+❯                                                                                                  1 11:34:59 AM
+~
+❯ git
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone             Clone a repository into a new directory
+   init              Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add               Add file contents to the index
+   mv                Move or rename a file, a directory, or a symlink
+   restore           Restore working tree files
+   rm                Remove files from the working tree and from the index
+   sparse-checkout   Initialize and modify the sparse-checkout
+
+examine the history and state (see also: git help revisions)
+   bisect            Use binary search to find the commit that introduced a bug
+   diff              Show changes between commits, commit and working tree, etc
+   grep              Print lines matching a pattern
+   log               Show commit logs
+   show              Show various types of objects
+   status            Show the working tree status
+
+grow, mark and tweak your common history
+   branch            List, create, or delete branches
+   commit            Record changes to the repository
+   merge             Join two or more development histories together
+   rebase            Reapply commits on top of another base tip
+   reset             Reset current HEAD to the specified state
+   switch            Switch branches
+   tag               Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch             Download objects and refs from another repository
+   pull              Fetch from and integrate with another repository or a local branch
+   push              Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+
+
+
+~
+❯                                                                                                  1 11:38:16 AM 
+~
+❯ cd git-demo
+
+~/git-demo
+❯                                                                                                    11:38:30 AM 
+~/git-demo
+❯ git init
+Initialized empty Git repository in /home/govindg/git-demo/.git/
+
+~/git-demo ± master
+❯ cd .git
+
+~/git-demo/.git ± ● master
+❯ ls
+HEAD  branches  config  description  hooks  info  objects  refs
+
+~/git-demo/.git ± ● master
+❯ ..
+
+~/git-demo ± master
+❯ ..
+
+~
+❯ rm git-demo
+rm: cannot remove 'git-demo': Is a directory
+
+~
+❯ rm -r git-demo
+rm: descend into directory 'git-demo'? y
+rm: descend into directory 'git-demo/.git'? y
+rm: remove directory 'git-demo/.git/branches'? ^C
+
+~
+❯ cd git-demo
+ll
+
+~/git-demo ± master
+❯ ll
+total 0
+
+~/git-demo ± master
+❯ rm -rf *
+zsh: sure you want to delete the only file in /home/govindg/git-demo [yn]? y
+removed directory '.git/branches'
+removed '.git/config'
+removed '.git/description'
+removed '.git/HEAD'
+removed '.git/hooks/applypatch-msg.sample'
+removed '.git/hooks/commit-msg.sample'
+removed '.git/hooks/fsmonitor-watchman.sample'
+removed '.git/hooks/post-update.sample'
+removed '.git/hooks/pre-applypatch.sample'
+removed '.git/hooks/pre-commit.sample'
+removed '.git/hooks/pre-merge-commit.sample'
+removed '.git/hooks/pre-push.sample'
+removed '.git/hooks/pre-rebase.sample'
+removed '.git/hooks/pre-receive.sample'
+removed '.git/hooks/prepare-commit-msg.sample'
+removed '.git/hooks/update.sample'
+removed directory '.git/hooks'
+removed '.git/info/exclude'
+removed directory '.git/info'
+removed directory '.git/objects/info'
+removed directory '.git/objects/pack'
+removed directory '.git/objects'
+removed directory '.git/refs/heads'
+removed directory '.git/refs/tags'
+removed directory '.git/refs'
+removed directory '.git'
+
+
+~/git-demo
+❯
+
+~/git-demo
+❯                                                                                                    11:40:00 AM 
+
+
+
+
+
+
+
+
+
+
+
+
+~/git-demo
+❯ git init
+Initialized empty Git repository in /home/govindg/git-demo/.git/
+
+
+
+
+~/git-demo ± master
+❯ ll
+total 0
+
+~/git-demo ± master
+❯ vim hello.py
+
+~/git-demo ± ● master
+❯ git diff
+
+~/git-demo ± ● master
+❯ git add diff
+fatal: pathspec 'diff' did not match any files
+
+~/git-demo ± ● master
+
+
+
+❯
+
+~/git-demo ± ● master
+❯ git add hello.py
+
+~/git-demo ± ● master
+❯ git diff
+
+~/git-demo ± ● master
+❯ mkdir -p best/day
+
+~/git-demo ± ● master
+❯ cd best/day
+
+~/git-demo/best/day ± ● master
+❯ vim best.py
+
+~/git-demo/best/day ± ●● master
+❯ ..
+
+~/git-demo/best ± ●● master
+❯ ..
+
+~/git-demo ± ●● master
+❯ git add best/day
+
+~/git-demo ± ● master
+❯ git commit -m "First commit"
+[master (root-commit) 4284657] First commit
+ 2 files changed, 2 insertions(+)
+ create mode 100644 best/day/best.py
+ create mode 100644 hello.py
+
+~/git-demo ± master
+❯ vim hello.py
+
+~/git-demo ± ● master
+❯ git add hello.py
+
+~/git-demo ± ● master
+❯ git diff
+
+~/git-demo ± ● master
+❯ git commit -m "Second commit"
+[master 01a51f8] Second commit
+ 1 file changed, 3 insertions(+)
+
+~/git-demo ± master
+❯ git diff 01a51f8  4284657
+
+~/git-demo ± master
+❯ git remote add origin git@github.com:sandkoan/hello-git.git
+
+~/git-demo ± master
+❯ git branch -M main
+
+~/git-demo ± main
+❯ git push -u origin main
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (9/9), 631 bytes | 157.00 KiB/s, done.
+Total 9 (delta 0), reused 0 (delta 0)
+To github.com:sandkoan/hello-git.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+~/git-demo ± main
+❯                                                                                                    11:47:38 AM 
+
+
+
+
+
+
+
+
+
+~/git-demo ± main
+❯ echo "best" >> best
+zsh: is a directory: best
+
+
+
+
+~/git-demo ± main
+❯ echo "best" >> best.txt
+
+~/git-demo ± ● main
+❯ git add ,
+fatal: pathspec ',' did not match any files
+
+~/git-demo ± ● main
+❯ git add .
+
+~/git-demo ± ● main
+❯ git commit -m "Another commit"
+[main ac3950a] Another commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 best.txt
+
+
+
+~/git-demo ± ⇡1 main
+❯ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 303 bytes | 303.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0)
+To github.com:sandkoan/hello-git.git
+   01a51f8..ac3950a  main -> main
+
+~/git-demo ± main
+❯ git log
+
+~/git-demo ± main
+❯ git log
+
+~/git-demo ± main
+❯ git fetch
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 742 bytes | 92.00 KiB/s, done.
+From github.com:sandkoan/hello-git
+   ac3950a..0c14728  main       -> origin/main
+
+~/git-demo ± ⇣1 main
+❯ git log
+
+~/git-demo ± ⇣1 main
+❯ git merge
+Updating ac3950a..0c14728
+Fast-forward
+ another_file | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 another_file
+
+~/git-demo ± main
+❯ git log
+
+~/git-demo ± main
+❯ git pull
+Already up to date.
+
+~/git-demo ± main
+❯ git pull
+Already up to date.
+
+~/git-demo ± main
+❯ git checkout -b bugfix1
+Switched to a new branch 'bugfix1'
+
+~/git-demo ± bugfix1
+❯ vim hello.py
+
+~/git-demo ± ● bugfix1
+❯ git add .
+
+~/git-demo ± ● bugfix1
+❯ git commit -m "Fix big 1"
+
+
+[bugfix1 02f5cd7] Fix big 1
+ 1 file changed, 1 insertion(+), 4 deletions(-)
+
+~/git-demo ± bugfix1
+❯ git push
+fatal: The current branch bugfix1 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin bugfix1
+
+
+
+
+
+~/git-demo ± bugfix1
+❯ git push --set-upstream origin bugfix1
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 277 bytes | 92.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'bugfix1' on GitHub by visiting:
+
+
+remote:      https://github.com/sandkoan/hello-git/pull/new/bugfix1
+remote:
+To github.com:sandkoan/hello-git.git
+ * [new branch]      bugfix1 -> bugfix1
+Branch 'bugfix1' set up to track remote branch 'bugfix1' from 'origin'.
+
+~/git-demo ± bugfix1
+❯ git checkout master
+error: pathspec 'master' did not match any file(s) known to git
+
+~/git-demo ± bugfix1
+❯ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+~/git-demo ± main
+❯ git checkout bugfix1
+Switched to branch 'bugfix1'
+Your branch is up to date with 'origin/bugfix1'.
+
+~/git-demo ± bugfix1
+❯ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+~/git-demo ± main
+❯ ll
+total 0
+-rw-r--r-- 1 govindg govindg  12 Mar  4 11:50 another_file
+drwxr-xr-x 1 govindg govindg 512 Mar  4 11:41 best
+-rw-r--r-- 1 govindg govindg   5 Mar  4 11:47 best.txt
+-rw-r--r-- 1 govindg govindg  60 Mar  4 11:57 hello.py
+
+~/git-demo ± main
+❯ vim hello.py
+
+~/git-demo ± main
+❯ git merge bugfix1
+Updating 0c14728..02f5cd7
+Fast-forward
+ hello.py | 5 +----
+ 1 file changed, 1 insertion(+), 4 deletions(-)
+
+
+
+~/git-demo ± ⇡1 main
+❯ git log
+
+
+
+~/git-demo ± ⇡1 main
+❯ git commit
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+~/git-demo ± ⇡1 main
+❯ vim hello.py
+
+~/git-demo ± ⇡1 main
+❯ git push
+Total 0 (delta 0), reused 0 (delta 0)
+To github.com:sandkoan/hello-git.git
+   0c14728..02f5cd7  main -> main
+
+~/git-demo ± main
+❯ git branch -d bugfix1
+Deleted branch bugfix1 (was 02f5cd7).
+
+~/git-demo ± main
+❯ ls
+another_file  best  best.txt  hello.py
+
+~/git-demo ± main
+❯ git checkout 4284657
+Note: switching to '4284657'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 4284657 First commit
+
+~/git-demo ± main~4
+❯ ll
+total 0
+drwxr-xr-x 1 govindg govindg 512 Mar  4 11:41 best
+-rw-r--r-- 1 govindg govindg  15 Mar  4 11:59 hello.py
+
+~/git-demo ± main~4
+❯ vim hello.py
+
+~/git-demo ± main~4
+❯ vim hello.go
+
+~/git-demo ± ● main~4
+❯ git add .
+
+~/git-demo ± ● main~4
+❯  git commit -m "Messing with things"
+[detached HEAD 17342fd] Messing with things
+ 1 file changed, 3 insertions(+)
+ create mode 100644 hello.go
+
+~/git-demo ± 17342fd
+❯ git push
+fatal: You are not currently on a branch.
+To push the history leading to the current (detached HEAD)
+state now, use
+
+    git push origin HEAD:<name-of-remote-branch>
+
+
+~/git-demo ± 17342fd
+❯ git push origin HEAD:main
+To github.com:sandkoan/hello-git.git
+ ! [rejected]        HEAD -> main (non-fast-forward)
+error: failed to push some refs to 'git@github.com:sandkoan/hello-git.git'
+hint: Updates were rejected because a pushed branch tip is behind its remote
+hint: counterpart. Check out this branch and integrate the remote changes
+hint: (e.g. 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+~/git-demo ± 17342fd
+❯ git pull
+You are not currently on a branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+
+~/git-demo ± 17342fd
+❯ git checkout main
+Warning: you are leaving 1 commit behind, not connected to
+any of your branches:
+
+  17342fd Messing with things
+
+If you want to keep it by creating a new branch, this may be a good time
+to do so with:
+
+ git branch <new-branch-name> 17342fd
+
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
